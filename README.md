@@ -42,7 +42,7 @@ The code has been rewritten from scratch while maintaining the core concepts and
 ![VAE_CELEB](./generated_images/reconstruction.png)
 
 
-- B) **Generation results using the Diffusion Transformer, trained with CELEB **
+- B) **Generation results using the Diffusion Transformer, trained with CELEB**
 
 ![DiT_CELEB](./generated_images/0.png)
 
