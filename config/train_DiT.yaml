@@ -1,0 +1,49 @@
+# General
+img_size: 128
+img_channels: 3
+latent_flag: False # False
+latent_dir: './result/VAE/latent_data'
+autoencoder_load_file: './result/VAE/VAE.pt'
+
+# Architectures for VAE
+
+z_channels: 4
+codebook_size: 8192
+norm_channels: 32
+
+num_down_layers: 2
+down_channels: [128, 256, 384]
+down_sample: [True, True]
+down_attn: [False, False]
+
+num_mid_layers: 2
+mid_channels: [384, 384]
+mid_attn: [True]
+num_heads: 4
+
+num_up_layers: 2
+
+# Architectures for DiT
+patch_size: 2
+num_layers: 12
+hidden_size: 768
+num_heads: 12
+head_dim: 64
+timestep_embedding_dim: 768
+
+# Parameters for Diffusion
+num_timesteps: 1000
+beta_start: 0.0001
+beta_end: 0.02
+
+# Training for DiT
+dit_batch_size: 16 # 16
+dit_epochs: 500
+dit_lr: 0.00001 # 0.00001
+dit_acc_steps: 2 # 2
+dit_num_workers: 6 # 0
+
+
+
+
+

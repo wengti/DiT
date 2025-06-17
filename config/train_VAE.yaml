@@ -1,0 +1,43 @@
+# General
+seed: 1111
+img_size: 128
+img_channels: 3
+latent_flag: False
+
+# Architectures for VAE
+z_channels: 4
+codebook_size: 8192
+norm_channels: 32
+
+num_down_layers: 2
+down_channels: [128, 256, 384]
+down_sample: [True, True]
+down_attn: [False, False]
+
+num_mid_layers: 2
+mid_channels: [384, 384]
+mid_attn: [True]
+num_heads: 4
+
+num_up_layers: 2
+
+# Training for VAE
+ac_num_workers: 0
+ac_batch_size: 4
+ac_epochs: 30 # 3
+ac_lr: 0.00001
+ac_acc_steps: 4 # 1
+
+disc_start_steps: 30000 # 7500
+adv_weight: 0.5
+perceptual_weight: 1
+kl_weight: 0.000005
+
+# sampling for VAE
+img_save_steps: 500
+sample_size: 4
+
+
+
+
+
