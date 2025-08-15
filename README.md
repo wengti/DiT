@@ -1,5 +1,4 @@
 # Diffusion Transformer (DiT)
-Testing
 
 ## Credits & Acknowledgements
 This project is a reimplementation of [DiT-PyTorch] by [explainingai-code] (https://github.com/explainingai-code/DiT-PyTorch)
